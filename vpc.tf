@@ -1,7 +1,7 @@
-resource "aws_vpc" "dev-vpc" {
-  cidr_block = var.cidr_blocks[0]
+resource "aws_vpc" "myapp-vpc" {
+  cidr_block = var.vpc_cidr_block
   enable_dns_support = true
   tags = {
-    Name = var.env
+    Name = "${var.env_prefix}-vpc"
   }
 }
