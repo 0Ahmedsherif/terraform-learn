@@ -1,23 +1,9 @@
-variable vpc_cidr_block {
-  type        = string
-}
-
-variable subnet_cidr_block {
-  type        = string
-}
-
+variable vpc_cidr_block {}
+variable subnet_cidr_block {}
 variable env_prefix {}
-
 variable az {}
+variable region {}
+variable my_ip {}
+variable instance_type {}
+variable public_key_location {}
 
-variable region {
-  type        = string
-}
-
-variable my_ip {
-  type        = string
-}
-
-variable instance_type {
-  type        = string
-}
